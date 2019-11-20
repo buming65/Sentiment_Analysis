@@ -158,10 +158,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="47" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="34" />
     <option name="y" value="23" />
-    <option name="width" value="1647" />
+    <option name="width" value="1646" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager">

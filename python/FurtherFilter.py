@@ -10,4 +10,4 @@ df1 = (df[df["text"].str.contains(input())])                #filtering according
 
 df2=df1.drop(['text'], axis=1)                              #delete content
 
-df2.to_csv("../dataset/data3.csv", encoding='UTF-8', header=None, index=None)       #write into a new csv file
+df2.to_csv("../dataset/3.csv", encoding='UTF-8', header=None, index=None)       #write into a new csv file

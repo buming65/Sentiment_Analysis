@@ -1,4 +1,4 @@
-# Twiiter Geospatial Sentiment_Analysis
+# Twitter Geospatial Sentiment_Analysis
 
 ## Introduction
 

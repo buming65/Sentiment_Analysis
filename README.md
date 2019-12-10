@@ -25,14 +25,7 @@ Model contains the two functions model. One is the model named 'NaiveBayesModel.
 Ipynb contains ipynb files of all stages and the model evaluations, it also has two file of these two model. The evaluations are the precision, recall, f1, accuracy.
 
 Script contains the script that runs codes from stages
-
-## Run Script 
-
-To run the script, what need to satisfy is that the environment need the python library: sys, csv, nltk, string, re, pickle, math, codecs, pickle, numpy，mapclassify，zipfile，matplotlib，bokeh， eopandas，pysal，requests.
-
-1. Step one:
-Here four script: 'Analysis_Test.sh', 'Analysis_Train.sh', 'NaiveBayes_Test.sh', 'NaiveBayes_Train.sh. For this time, we only use the 'data.csv' stored in the dataset folder. All the script are no need to input any parameter. Just run like './Analysis_Test.sh'.
-
+For Sentiment Analysis Section :
 The Analysis_Test.sh predict the 'data.csv' dataset with NLTK classifier.
 
 The Analysis_Train.sh use the Twitter_Sample to train the NLTK classifier.
@@ -40,10 +33,13 @@ The Analysis_Train.sh use the Twitter_Sample to train the NLTK classifier.
 The NaiveBayes_Test.sh predict the 'data.csv' dataset with the classifier accomplished by ourselves.
 
 The NaiveBayes_Train.sh use the Twitter_Sample to extract the positive words and the negative words.
+## Run Script 
+Note: To run the script, what need to satisfy is that the environment need the python library: sys, csv, nltk, string, re, pickle, math, codecs, pickle, numpy，mapclassify，zipfile，matplotlib，bokeh， geopandas，pysal，requests.
+(located in script folder)
+1. Step one:Run Analysis_Test.sh 
 2. Step Two: Run FurtherFilter.sh
-this stage would take the output of sentiment analysis and perform further filtering
-
-3.Step Three: Run 
-
-4. Step Four: Run visulization.sh.
-As the final stage, this script would execute the code that takes data outputted from the last stage and create three map as output into the result directory. Specifically, one would be normalized static map, one would be non normalized static map, and one would be interactive map that user can hover to see detail.
+3. Step Three: Run GroupCentroid.sh
+4. Step Four: Run visulization.sh
+-----------------------------------------
+## Result
+executing these codes would provide the final outputs in the result folder containing sentiment analysis classification output and three map visulizations. Specifically, one would be normalized static map, one would be non normalized static map, and one would be interactive map that user can hover to see detail.
